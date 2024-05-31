@@ -1,0 +1,15 @@
+{
+  "extends": "./tsconfig",
+  "compilerOptions": {
+    "outDir": "./dist/esm/out",
+    // "outDir": "dist",
+    "declaration": true,
+    "declarationDir": "./dist/esm/types",
+    // "declarationDir": "dist",
+  },
+  "exclude": [
+    "node_modules",
+    "dist",
+    "build",
+  ]
+}

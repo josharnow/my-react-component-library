@@ -1,5 +1,6 @@
 import resolve from "@rollup/plugin-node-resolve";
 import commonjs from "@rollup/plugin-commonjs";
+// import typescript from "rollup-plugin-typescript2";
 import typescript from "@rollup/plugin-typescript";
 import dts from "rollup-plugin-dts";
 
@@ -39,7 +40,10 @@ export default [
       peerDepsExternal(),
       resolve(),
       commonjs(),
-      typescript({ tsconfig: "./tsconfig.json" }),
+      typescript({
+        tsconfig: 'tsconfig.build.json',
+        // useTsconfigDeclarationDir: true,
+      }),
       postcss(),
 
       terser(),
