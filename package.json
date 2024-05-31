@@ -1,7 +1,11 @@
 {
-  "name": "my-react-component-library",
+  "name": "@josharnow/my-react-component-library",
   "version": "0.0.1",
   "type": "module",
+  "repository": "git://github.com/josharnow/my-react-component-library.git",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "scripts": {
     "rollup": "rollup -c"
   },
