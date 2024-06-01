@@ -1,8 +1,11 @@
 {
   "name": "@josharnow/my-react-component-library",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "type": "module",
-  "repository": "git://github.com/josharnow/my-react-component-library.git",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/josharnow/my-react-component-library.git"
+  },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
   },
@@ -38,5 +41,5 @@
   "files": [
     "dist"
   ],
-  "types": "dist/index.d.ts"
+  "types": "dist/esm/types/index.d.ts"
 }
